@@ -152,7 +152,7 @@ while (i < numericArray.length) {
       console.log(numericArray[i]);
       i++;
     } else {
-      console.log(numericArray[i]); // 32 incluso
+      console.log(numericArray[i]); // 32 incluso, basta togliere questo per avere escluso
       break;          //esce dal ciclo while
     }
   }
