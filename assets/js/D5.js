@@ -1,4 +1,5 @@
 //in questo caso ho utilizzato stesso il file index.html per visualizzare i console dato che non è presente nessun omportamento all'intero della pagina
+//premessa non metto i punti e virgola alla fine della riga perché in javascript non è obbligario
 
 /*
 REGOLE
@@ -25,13 +26,27 @@ for(let i = 0; i < pets.length; i++) {
 console.log(" ")
 console.log("Esercizio2-------------")
 
+pets.sort()
+console.log(pets)
+
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+console.log(" ")
+console.log("Esercizio3-------------")
+
+pets.reverse()
+console.log(pets)
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+console.log(" ")
+console.log("Esercizio4-------------")
+
+pets.push(pets[0])   //vado prima ad inserire il primo elemento alla fine
+pets.shift()         // vado ad eliminare il primo elemento
+console.log(pets)
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -57,10 +72,23 @@ const cars = [
   },
 ]
 
+console.log(" ")
+console.log("Esercizio5-------------")
+
+for(let i = 0; i < cars.length; i++) {    //in modo dinamico, farà una concatenazione con l'indice, Avrei potuto usare anche un random
+  cars[i].licensePlate = 'PLATE' + i.toString()    //metodo toString in questo caso converte un numero in una stringa. 
+}
+console.log(cars)
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+
+console.log(" ")
+console.log("Esercizio6-------------")
+
+
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
