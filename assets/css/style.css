@@ -99,8 +99,12 @@ body {
     font-weight: 600;
 }
 
+.findImg {
+    text-align: center; /* Per centrare gli elementi inline (come le immagini) */
+}
 
 .findImg img {
+    display: inline-block;
     margin: 10px;
     width: 23.2%;
     height: 400px;
