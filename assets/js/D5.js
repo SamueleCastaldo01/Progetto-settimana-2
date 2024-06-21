@@ -88,28 +88,166 @@ console.log(cars)
 console.log(" ")
 console.log("Esercizio6-------------")
 
+let carFiat = {
+  brand: 'Fiat',
+  model: '500X',
+  color: 'blue',
+  trims: ['titanium', 'st', 'active'],
+  licensePlate: 'PLATE5'
+}
 
+cars.push(carFiat)   //aggiunge l'oggetto di sopra, nell'array di oggetti all'ultima posizione.
+console.log(cars)
+
+for(let i = 0; i < cars.length; i++) { 
+  cars[i].trims.pop()
+}
+
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
+console.log(" ")
+console.log("Esercizio7-------------")
+
 const justTrims = []
+for(let i = 0; i < cars.length; i++) { 
+  justTrims[i] = cars[i].trims[0]
+}
+console.log(justTrims)
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+console.log(" ")
+console.log("Esercizio8-------------")
+
+for(let i = 0; i < cars.length; i++) { 
+  if(cars[i].color.charAt(0) === 'b') {
+    console.log(cars[i].brand + " " + cars[i].model + " " + cars[i].color + " Fizz")
+  } else {
+    console.log(cars[i].brand + " " + cars[i].model + " " + cars[i].color + " Buzz")
+  }
+}
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
+console.log(" ")
+console.log("Esercizio9-------------")
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
+let flag = false
+let i = 0
+while (flag === false ) {
+  if(numericArray[i] != 32) {
+    console.log(numericArray[i])
+    i++
+    flag = false
+  } else {
+    console.log(numericArray[i])
+    flag = true
+  }
+}
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+console.log(" ")
+console.log("Esercizio10-------------")
+const charactersArray = ['g', 'n', 'u', 'z', 'd'];    //non ho considerato che i caratteri possono essere anche in maiuscolo
+const positionArray = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+    switch (charactersArray[i]) {
+        case 'a':
+            positionArray.push(1);
+            break;
+        case 'b':
+            positionArray.push(2);
+            break;
+        case 'c':
+            positionArray.push(3);
+            break;
+        case 'd':
+            positionArray.push(4);
+            break;
+        case 'e':
+            positionArray.push(5);
+            break;
+        case 'f':
+            positionArray.push(6);
+            break;
+        case 'g':
+            positionArray.push(7);
+            break;
+        case 'h':
+            positionArray.push(8);
+            break;
+        case 'i':
+            positionArray.push(9);
+            break;
+        case 'j':
+            positionArray.push(10);
+            break;
+        case 'k':
+            positionArray.push(11);
+            break;
+        case 'l':
+            positionArray.push(12);
+            break;
+        case 'm':
+            positionArray.push(13);
+            break;
+        case 'n':
+            positionArray.push(14);
+            break;
+        case 'o':
+            positionArray.push(15);
+            break;
+        case 'p':
+            positionArray.push(16);
+            break;
+        case 'q':
+            positionArray.push(17);
+            break;
+        case 'r':
+            positionArray.push(18);
+            break;
+        case 's':
+            positionArray.push(19);
+            break;
+        case 't':
+            positionArray.push(20);
+            break;
+        case 'u':
+            positionArray.push(21);
+            break;
+        case 'v':
+            positionArray.push(22);
+            break;
+        case 'w':
+            positionArray.push(23);
+            break;
+        case 'x':
+            positionArray.push(24);
+            break;
+        case 'y':
+            positionArray.push(25);
+            break;
+        case 'z':
+            positionArray.push(26);
+            break;
+        default:
+            console.log("Il carattere" + charactersArray[i] +  "non è una lettera dell'alfabeto italiano.");
+            break;
+    }
+}
+
+console.log(positionArray);
+
