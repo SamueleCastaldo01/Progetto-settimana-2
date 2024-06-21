@@ -38,6 +38,12 @@ console.log("Esercizio3-------------")
 pets.reverse()
 console.log(pets)
 
+//seconda soluzione
+console.log("Seconda soluzione")
+for (let i = pets.length - 1; i >= 0; i--) {
+    console.log(pets[i]);
+}
+
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
