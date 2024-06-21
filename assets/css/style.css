@@ -11,6 +11,10 @@ body {
     background-color: #e9edee;
 }
 
+.holiday, .play, .find {
+    margin-top: 30px;
+}
+
 /* Header +++++++++++++++++++++++++++++++++++++++++++*/
 .headerLogo {
     background-color: #222f3f;
@@ -26,11 +30,15 @@ body {
     background-color: #364759;
     padding: 5px;
     padding-left: 30px;
-    color: white;
 }
 
 .headerList span {
     margin-left: 15px;
+}
+
+.headerList a{
+    color: white;
+    text-decoration: none;
 }
 
 /* Main +++++++++++++++++++++++++++++++++++++++++++*/
@@ -51,8 +59,7 @@ body {
 
 /* Holiday +++++++++++++++++++++++++++++++++*/
 .holiday {
-    margin-top: 30px;
-    background-image: url(../images/bg-image.png);  /*   qui l'immagine non si deve allagare*/
+    background-image: url(../images/bg-image.png);
     padding: 60px;
     text-align: center;
     color: white;
@@ -64,28 +71,27 @@ body {
 
 /* find +++++++++++++++++++++++++++++++++*/
 .find {
-    margin-top: 30px;
     background-color: white;
     padding: 10px;
     
 }
 
+.find h3 {
+    margin-left: 10px;
+}
+
 .find span a, .play span a {
     text-decoration: none;
-    color: #3d7380;
+    color: #2f707b;
     font-size: 16px;
     margin-left: 20px;
+    font-weight: 600;
 }
 
-.findImg {
-        text-align: center;
-        padding: 0px;
-}
 
 .findImg img {
-    display: inline-block;
     margin: 10px;
-    width: 300px;
+    width: 23.2%;
     height: 400px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -93,20 +99,12 @@ body {
 
 /* play +++++++++++++++++++++++++++++++++*/
 .play {
-    margin-top: 30px;
     text-align: center;
-}
-
-.play span a{
-    text-decoration: none;
-    color: #3d7380;
-    font-size: 16px;
-    margin-left: 20px;
 }
 
 .play img {
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 /* Footer +++++++++++++++++++++++++++++++++++++++++++*/
@@ -118,6 +116,7 @@ body {
 
 .back a {
     color: white;
+    font-weight: 600;
 }
 
 .footerLogo {

@@ -148,7 +148,7 @@ while (flag === false ) {
     i++
     flag = false
   } else {
-    console.log(numericArray[i])
+    console.log(numericArray[i])    //32 incluso nel mio caso
     flag = true
   }
 }
