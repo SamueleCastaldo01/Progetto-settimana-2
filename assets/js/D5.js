@@ -131,7 +131,7 @@ console.log(" ")
 console.log("Esercizio8-------------")
 
 for(let i = 0; i < cars.length; i++) { 
-  if(cars[i].color.charAt(0) === 'b') {
+  if(cars[i].color.charAt(0) === 'b' ||  cars[i].color.charAt(0) === 'B') {
     console.log(cars[i].brand + " " + cars[i].model + " " + cars[i].color + " Fizz")
   } else {
     console.log(cars[i].brand + " " + cars[i].model + " " + cars[i].color + " Buzz")
