@@ -41,6 +41,7 @@ body {
     padding-bottom: 30px;
 }
 
+/* shop +++++++++++++++++++++++++++++++++*/
 .shop {
     background-color: #f56600;
     text-align: center;
@@ -48,6 +49,7 @@ body {
     padding: 10px;
 }
 
+/* Holiday +++++++++++++++++++++++++++++++++*/
 .holiday {
     margin-top: 30px;
     background-image: url(../images/bg-image.png);  /*   qui l'immagine non si deve allagare*/
@@ -60,6 +62,7 @@ body {
     margin-top: 25px;
 }
 
+/* find +++++++++++++++++++++++++++++++++*/
 .find {
     margin-top: 30px;
     background-color: white;
@@ -67,22 +70,62 @@ body {
     
 }
 
-.find span {
+.find span a, .play span a {
+    text-decoration: none;
     color: #3d7380;
     font-size: 16px;
     margin-left: 20px;
 }
 
 .findImg {
-    display: inline-block;
-    margin: 0 auto;
+        text-align: center;
+        padding: 0px;
 }
 
 .findImg img {
-    text-align: center;
+    display: inline-block;
     margin: 10px;
     width: 300px;
-    height: 350px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* play +++++++++++++++++++++++++++++++++*/
+.play {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.play span a{
+    text-decoration: none;
+    color: #3d7380;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.play img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Footer +++++++++++++++++++++++++++++++++++++++++++*/
+.back {
+    background-color: #364759;
+    text-align: center;
+    padding: 15px;
+}
+
+.back a {
+    color: white;
+}
+
+.footerLogo {
+    background-color: #222f3f;
+    text-align: center;
+    padding: 60px;
+}
+
+.footerLogo img {
+    width: 200px;
 }
